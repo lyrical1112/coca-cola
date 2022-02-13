@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+/* Main */
+
+h1 {
+  font-weight: 300;
+  letter-spacing: 5px;
+  font-size: 48px;
+}
+
+p {
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(60deg, #000 0%, #757575 100%);
+  color: #f0f0f0;
+}
+
+.title h1 {
+  font-size: 3.75rem;
+  color: #f0f0f0;
+  font-family: "S-CoreDream-9Black";
+}
+
+
+.logo {
+  width: 50px;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height: 25vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 300px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+/* Animation */
+.parallax use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+/* 콘텐츠 시작 */
+.nav_sec {
+  padding: 100px 4%;
+}
+
+.C_sub_title {
+  font-size: 24px;
+  font-family: 'S-CoreDream-9Black', sans-serif;
+}
+
+.C_sec1 {
+  padding: 0 10%;
+  margin-bottom: 100px;
+}
+
+input[id*="answer"] {
+  display: none;
+}
+
+input[id*="answer"]+label {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 18px;
+  display: block;
+  padding: 10px 40px 10px 10px;
+  border-top: 1px solid #1e1e1e;
+  cursor: pointer;
+  position: relative;
+}
+
+input[id*="answer"]+label em {
+  position: absolute;
+  top: 25%;
+  right: 15px;
+  width: 17px;
+  height: 10px;
+  margin-top: 15px;
+  display: inline-block;
+  background: url(../img/ic-down.svg) 0 0 no-repeat;
+  vertical-align: middle;
+}
+
+input[id*="answer"]+label span {
+  font-family: 'S-CoreDream-9Black';
+  font-size: 35px;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+
+input[id*="answer"]+label+div {
+  max-height: 0;
+  transition: all .35s;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+input[id*="answer"]+label+div p {
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'S-CoreDream-3Light';
+  padding: 20px;
+}
+
+input[id*="answer"]:checked+label+div {
+  max-height: 2000px;
+}
+
+input[id*="answer"]:checked+label em {
+  background: url(../img/ic-up.svg) 0 0 no-repeat;
+}
+
+#tab1:checked~.accordion,
+#tab2:checked~.accordion2,
+#tab3:checked~.accordion3,
+#tab4:checked~.accordion4 {
+  display: block;
+}
+
+#tab2:checked~.accordion,
+#tab3:checked~.accordion,
+#tab4:checked~.accordion {
+  display: none;
+}
+
+.accordion2 {
+  display: none;
+}
+
+.accordion3 {
+  display: none;
+}
+
+.accordion4 {
+  display: none;
+}
+
+.C_tab_form {
+  display: none;
+}
+
+.C_tab_menu {
+  display: inline-block;
+  padding: 15px 25px;
+  font-weight: 600;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+label:hover {
+  color: #f40009;
+  cursor: pointer;
+}
+
+/*input 클릭시, label 스타일*/
+input:checked+label {
+  color: #1e1e1e;
+  border: 1px solid #ddd;
+  border-top: 2px solid #f40009;
+  border-bottom: 1px solid #ffffff;
+}
+
+
+/* 헤더 미디어쿼리 */
+/* 푸터 미디어 쿼리 */
+@media (max-width: 767px) {
+  section {
+    padding: 0;
+  }
+
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*# sourceMappingURL=coca_social.css.map */
+
+/* 반응형 */
+@media (max-width: 1100px) {}
+
+@media (max-width: 600px) {
+  .C_sec1 {
+    padding: 0 5%;
+  }
+
+  .title h1 {
+    font-size: 2.75rem;
+  }
+
+  .C_tab_menu {
+    padding: 15px 15px;
+  }
+
+  input[id*="answer"]+label span{
+    padding-right: 10px;
+  }
+
+  input[id*="answer"]+label {
+    font-size: 15px;
+  }
+
+  input[id*="answer"]+label+div p{
+    font-size: 14px;
+  } 
+
+  input[id*="answer"]+label em {
+    background: url(../img/m-ic-down.svg) 0 0 no-repeat;
+  }
+
+  input[id*="answer"]:checked+label em {
+    background: url(../img/m-ic-up.svg) 0 0 no-repeat;
+  }
+}

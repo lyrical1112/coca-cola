@@ -1,0 +1,357 @@
+.A_sec1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/회사소개img/Coca-Cola-logo-red-background_1920x1200.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+}
+
+.A_sec1 .scroll_bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 4;
+    height: 100px;
+}
+
+.A_sec1 .scroll_bar span {
+    display: block;
+    position: absolute;
+    width: 2px;
+    background: #fff;
+    height: 100%;
+    animation: scrolldown-bar infinite 1.8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.A_sec1 .scroll_bar::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+@keyframes scrolldown-bar {
+    0% {
+        top: 0;
+        bottom: 100%;
+        height: 0;
+    }
+
+    30% {
+        top: 0;
+        bottom: 100%;
+        height: 100%;
+    }
+
+    31% {
+        top: 0%;
+        bottom: 100%;
+    }
+
+    60%,
+    100% {
+        top: 100%;
+        bottom: 0;
+        height: 0%;
+    }
+}
+
+.A_sec1 h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.A_sec2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/회사소개img/Coca_Cola_Glass_Bottle_Sunset_Sunlight_1920x1200.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+}
+
+.A_sec2 h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.A_sec2 h1>em {
+    color: #F40009;
+}
+
+.A_sec2 p {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'S-CoreDream-3Light';
+}
+
+.A_sec3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/회사소개img/content-2-bn-1.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+}
+
+.A_sec3 h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: left;
+    margin-left: 200px;
+    margin-bottom: 60px;
+}
+
+.A_sec3 p {
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 200px;
+    font-family: 'S-CoreDream-3Light';
+}
+
+.A_sec4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/회사소개img/wallpaper-gom.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+}
+
+.A_sec4 h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.A_sec4 p {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'S-CoreDream-3Light';
+}
+
+.A_icon_box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.A_icon_box>figure {
+    text-align: center;
+}
+
+.A_icon_box>figure>img {
+    width: 60%;
+}
+
+.A_icon_box>figure>figcaption {
+    font-size: 20px;
+    font-family: 'S-CoreDream-3Light';
+    color: #fff;
+}
+
+.A_sec5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/회사소개img/wallpaper-bottle.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+}
+
+.A_sec5 h1 {
+    margin-top: 400px;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/*애니메이션*/
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeIn,
+.fadeOut {
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+/* top버튼 */
+a#btnGoTop {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    width: 58px;
+    height: 58px;
+    border: 2px solid #999;
+    background: #fff;
+    border-radius: 50%;
+}
+
+#btnGoTop img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 22px;
+}
+
+
+/* 미디어쿼리 */
+
+/* 반응형 미디어 쿼리 */
+@media (max-width: 1100px) {
+    .A_sec1 h1 {
+        font-size: 45px;
+    }
+
+    .A_sec2 h1 {
+        font-size: 45px;
+    }
+
+    .A_sec2 p {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .A_sec3 h1 {
+        font-size: 45px;
+    }
+
+    .A_sec3 p {
+        font-size: 20px;
+    }
+
+    .A_sec4 h1 {
+        font-size: 45px;
+    }
+
+    .A_sec4 p {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .A_icon_box {
+        margin-top: 100px;
+    }
+
+    .A_icon_box>figure {
+        text-align: center;
+    }
+
+    .A_icon_box>figure>img {
+        width: 60%;
+    }
+
+    .A_icon_box>figure>figcaption {
+        font-size: 20px;
+    }
+
+    .A_sec5 h1 {
+        margin-top: 300px;
+        font-size: 45px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .A_sec1 h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .A_sec2 h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .A_sec2 p {
+        font-size: 15px;
+    }
+
+    .A_sec3 h1 {
+        font-size: 25px;
+        text-align: left;
+        margin-left: 50px;
+        margin-bottom: 60px;
+    }
+
+    .A_sec3 p {
+        font-size: 15px;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .A_sec4 h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .A_sec4 p {
+        font-size: 15px;
+    }
+
+    .A_icon_box {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+
+    .A_icon_box>figure {
+        text-align: center;
+    }
+
+    .A_icon_box>figure>img {
+        width: 60%;
+    }
+
+    .A_icon_box>figure>figcaption {
+        font-size: 15px;
+    }
+
+    .A_sec5 h1 {
+        margin-top: 300px;
+        font-size: 25px;
+    }
+}
