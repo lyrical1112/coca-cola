@@ -1,6 +1,6 @@
 # Coca-Cola
 
-<a href="https://ibb.co/JyvkcFF"><img src="https://i.ibb.co/GtWPd33/mokup-1.jpg" alt="mokup-1" border="0"></a>
+<a href="https://ibb.co/1n7rd4g"><img src="https://i.ibb.co/ZJGBYbj/coca-1.png" alt="coca-1" border="0"></a>
 
 코카콜라 웹사이트 리뉴얼 입니다.
 
