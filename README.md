@@ -16,4 +16,4 @@
 2. PHP Mysql를 이용한 고객상담센터 게시판 페이지 구현 
 
 ## 🔗Link
-코카콜라 : [http://ainwj.dothome.co.kr/](http://ainwj.dothome.co.kr/)
+코카콜라 : [http://sonatine11.dothome.co.kr/](http://sonatine11.dothome.co.kr/)
